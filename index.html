@@ -15,8 +15,13 @@
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 
 </head>
+
+
+
 <body>
 	<!-- CABEÇALHO -->
+<div class="container">
+	<div class="caixa__header">
 	<header>
 		<a href="https://www.instagram.com/" class="instagram-logo">
 			<figure>
@@ -24,9 +29,10 @@
 			</figure>
 		</a>
 	</header>
+	</div>
 
 	<!-- CONTEÚDO DA PÁGINA -->
-	<main>
+	<main class="conteudo-da-pagina">
 
 		<!-- CONTEÚDO SOBRE O USUÁRIO -->
 		<article class="profile-content">
@@ -42,13 +48,7 @@
 			<section class="profile-info">
 				<h1>kenzieacademybr</h1>
 
-				<!-- POSTS/SEGUIDORES/SEGUINDO -->
-				<div class="profile-data">
-					<p><span>122</span> posts</p>
-					<p><span>2,589</span> followers</p>
-					<p><span>227</span> following</p>
-				</div>
-
+				
 				<h2> Kenzie Academy Brasil </h2>
 				<ul>
 					<li>
@@ -61,8 +61,18 @@
 						<a href="https://linktr.ee/kenzieacademybr">linktr.ee/kenzieacademybr</a>
 					</li>
 				</ul>
+						<!-- POSTS/SEGUIDORES/SEGUINDO -->
+				<div class="profile-data">
+					<p><span>122</span> posts</p>
+					<p><span>2,589</span> followers</p>
+					<p><span>227</span> following</p>
+				</div>
 			</section>
 		</article>
+
+
+
+
 
 		<!-- DESTAQUES DO USUÁRIO -->
 		<article class="highlighted-stories">
@@ -86,14 +96,16 @@
 		<article class="profile-posts">
 
 			<!-- MENU DE POSTS -->
-			<nav>
-				<a href="#">Posts</a>
-				<a href="#">Igtv</a>
-				<a href="#">Tagged</a>
+			<nav class="nav__posts">
+				
+				<a class="aPosts posts--posts" href="#" >Posts</a>
+				<a href="#" class="aPosts posts--igtv">Igtv</a>
+				<a href="#" class="aPosts posts--tagged">Tagged</a>
 			</nav>
 
 			<!-- LISTA DE POSTS -->
-			<ul>
+			<div class="div__grid">
+			<ul class="grid">
 
 				<!-- POST -->
 				<li>
@@ -149,6 +161,7 @@
 					</a>
 				</li>
 			</ul>
+		</div>
 		</article>
 	</main>
 
@@ -156,7 +169,7 @@
 	<footer>
 
 		<!-- MENU RODAPÉ -->
-		<nav class="footer-nav">
+		<nav class="footer__nav">
 			<a href="#">About</a>
 			<a href="#">Help</a>
 			<a href="#">Press</a>
@@ -172,9 +185,10 @@
 
 		<!-- COPYRIGHT -->
 		<div class="copyright">
-			<p>&copy; 2020 instagram from facebook</p>
+			<p>&copy; 2020 Kenziegram from Kenzie Academy BR</p>
 		</div>
 
 	</footer>
+</div>
 </body>
 </html>
