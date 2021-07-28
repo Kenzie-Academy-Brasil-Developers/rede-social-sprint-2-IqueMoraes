@@ -274,7 +274,7 @@ img[alt="Highlight"] {
 
 /*----- POSTAGENS -----*/
 .profile-posts {
-	width: 100%;
+	width: 935px;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
@@ -317,12 +317,11 @@ img[alt="Highlight"] {
 	margin-top: 30px;
 }
 .grid {
-	width: 100vw;
-	max-width: 935px;
+	width: 100%;
 	height: fit-content;
 	flex:1;
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	justify-content: center;
 	align-items: flex-start;
 	align-content: center;
@@ -331,22 +330,12 @@ img[alt="Highlight"] {
 li {
 	list-style: none;
 	margin: 3px;
-	width: 30%;
-	height: 30%;
 
 }
-.grid a {
-
-}
-
-figure {}
 
 .grid img {
-	height: 100%;
-	width: 100%;
-	max-height: 293px;
-	
-	
+	height: 293px;
+	width: 293px;
 	
 	object-fit: contain;
 }
@@ -354,7 +343,11 @@ figure {}
 
 
 
-@media screen (min-width: 769px) {
-	li { margin: 10px}
+@media (min-width: 768px) {
+	li { margin: 5px}
+
+	.grid {
+		flex-flow: row wrap;
+	}
 	
 }
